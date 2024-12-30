@@ -15,12 +15,4 @@ Este projeto consiste em uma aplicação full-stack que permite o gerenciamento 
 - **Node.js**: Ambiente de execução para JavaScript no servidor.
 - **MySQL**: Banco de dados utilizado para armazenar as informações dos usuários.
 
-## Instalação
 
-### 1. Clonando o repositório
-
-Clone este repositório para sua máquina local:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
