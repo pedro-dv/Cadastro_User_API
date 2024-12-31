@@ -7,9 +7,15 @@
   },
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "build": "prisma generate && npm run build",  // Garante que Prisma Client será gerado durante o build
     "postinstall": "prisma generate",  // Força a execução do Prisma Client após a instalação no Vercel
     "dev": "prisma generate && node index.js",  // Geração do Prisma Client também durante o desenvolvimento
+=======
+    "build": "prisma generate && npm run build", 
+    "postinstall": "prisma generate",  
+    "dev": "prisma generate && node index.js", 
+>>>>>>> 1522ec2 (melhorias para deploy arquivo package.json)
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
