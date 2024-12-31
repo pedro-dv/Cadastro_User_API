@@ -7,9 +7,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "prisma generate && npm run build",
-    "dev": "prisma generate && node index.js",
-    "start": "node index.js",
+    "build": "prisma generate",  // Gera o Prisma Client durante o build
+    "dev": "prisma generate && node index.js",  // Gera o Prisma Client no ambiente de desenvolvimento
+    "start": "node index.js",  // Inicia a aplicação
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,3 +26,4 @@
     "prisma": "^6.1.0"
   }
 }
+
