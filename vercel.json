@@ -1,27 +1,23 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "index.js",
-            "use": "@vercel/node",
-            "config": {
-                "maxDuration": 10
-            }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "index.js"
-        }
-    ],
-    "env": {
-        "DATABASE_URL": "mongodb+srv://Pedro-Menezes:w6BlyX6tYDCx3xSl@users.5gz9m.mongodb.net/Users?retryWrites=true&w=majority&appName=Users"
-    },
-    "build": {
-    "env": {
-      "PRISMA_GENERATE": "true"
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 10
+      }
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "mongodb+srv://Pedro-Menezes:w6BlyX6tYDCx3xSl@users.5gz9m.mongodb.net/Users?retryWrites=true&w=majority&appName=Users"
   }
 }
+
 
