@@ -3,7 +3,10 @@
     "builds": [
         {
             "src": "index.js",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "config": {
+                "maxDuration": 10
+            }
         }
     ],
     "routes": [
@@ -12,13 +15,13 @@
             "dest": "index.js"
         }
     ],
+    "env": {
+        "DATABASE_URL": "mongodb+srv://Pedro-Menezes:w6BlyX6tYDCx3xSl@users.5gz9m.mongodb.net/Users?retryWrites=true&w=majority&appName=Users"
+    },
     "build": {
-        "env": {
-            "DATABASE_URL": "mongodb+srv://Pedro-Menezes:w6BlyX6tYDCx3xSl@users.5gz9m.mongodb.net/Users?retryWrites=true&w=majority&appName=Users"
-        },
-        "commands": [
-            "npx prisma generate"
-        ]
+    "env": {
+      "PRISMA_GENERATE": "true"
     }
+  }
 }
 
