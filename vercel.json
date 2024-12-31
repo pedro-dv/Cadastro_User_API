@@ -11,6 +11,14 @@
             "src": "/(.*)",
             "dest": "index.js"
         }
-    ]
+    ],
+    "build": {
+        "env": {
+            "DATABASE_URL": "mongodb+srv://Pedro-Menezes:w6BlyX6tYDCx3xSl@users.5gz9m.mongodb.net/Users?retryWrites=true&w=majority&appName=Users"
+        },
+        "commands": [
+            "npx prisma generate"
+        ]
+    }
 }
 
